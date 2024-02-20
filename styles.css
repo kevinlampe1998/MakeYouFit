@@ -1,0 +1,78 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+.discount1{
+
+}
+.headerschwarz {
+    display: flex;
+}
+.bildcontainer{
+    position: fixed;
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    height: 320px;
+    justify-content: center;
+    align-items: center;
+}
+.bild{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.ueber2{
+    text-align: center;
+    color: beige;
+    font-size: 4rem;
+    
+}
+.imagebutton{
+    color: aqua;
+    font-size: 2rem;
+    border: 2px solid blue;
+    background: blue;
+}
+.topics {
+    margin-top: 65%;
+    height: 30vh;
+    font-size: 1.2rem;
+    display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.topics2 {
+    color: black;
+    padding: 10px 15px;
+    margin: 5px;
+    background: lightgray;
+    text-decoration-line: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.produkte{
+    margin: 15px;
+    display: flex;
+    font-size: 1rem;
+    text-transform: uppercase;
+    justify-content: center;
+    color: purple
+}
+.filter{
+    
+}
+.filterrechts{
+justify-self: end;
+}
+.vor{
+    display: flex;
+}
