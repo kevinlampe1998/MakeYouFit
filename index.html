@@ -1,88 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MakeYouFit</title>
-    <link href="styles.css" rel="stylesheet"/>
+    <link href="styles.css" rel="stylesheet" />
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
     <script src="https://kit.fontawesome.com/9a9ab5aa9a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+
 <body>
-    <p class="superdiscount">
-            <div class="discount-container">
-            <div class="discount1">SUPER SALE 10% off*ON ALL ORDERS </div>
-            <div class="discount2">CODE: DISCOUNT10</div>
-            </div>
-    </p>
- <!-- --------------------------footer-------------------------------------- -->
-    
-<header>
-    <!-- <div class="wrapper"> 
+    <section class="advertising">
+        <div class="wrapper"> 
             <a href="#" class="icon facebook">
-            <div class="tooltip">Facebook</div>
+            <!-- <div class="tooltip">Facebook</div> -->
             <span><i class="fab fa-facebook-f"></i></span>
             </a>
             <a href="#" class="icon twitter">
-            <div class="tooltip">Twitter</div>
+            <!-- <div class="tooltip">Twitter</div> -->
             <span><i class="fab fa-twitter"></i></span>
             </a>
             <a href="#" class="icon instagram">
-            <div class="tooltip">Instagram</div>
+            <!-- <div class="tooltip">Instagram</div> -->
             <span><i class="fab fa-instagram"></i></span>
             </a>
             <a href="#" class="icon github">
-            <div class="tooltip">Github</div>
+            <!-- <div class="tooltip">Github</div> -->
             <span><i class="fab fa-github"></i></span>
             </a>
             <a href="#" class="icon youtube">
-            <div class="tooltip">Youtube</div>
+            <!-- <div class="tooltip">Youtube</div> -->
             <span><i class="fab fa-youtube"></i></span>
             </a>
-        </div> -->
+        </div>
+        <div class="discount-container">
+            <div class="discount1">SUPER SALE 10% off*ON ALL ORDERS </div>
+            <div class="discount2">CODE: DISCOUNT10</div>
+        </div>
+        <a class="advertising-english-btn">English<i class="fa-solid fa-chevron-down"></i></a>
+    </section>
+    <!-- --------------------------header-------------------------------------- -->
 
-    <div class="headerschwarz">
-        <i class="fa-solid fa-bars"></i>
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <div class="ueberschrift">Ultimate<br>Nutrition</div>
-        <i class="fa-solid fa-user"></i>
-        <i class="fa-regular fa-bag-shopping"></i>
-    </div>
-    <div class="bildcontainer">
-        <img class="bild" src="images/header-image.png">
-        <h1 class="ueber2">Get Fit, Get<br>Ultimate</h1>
-        <a class="imagebutton">Show all products</a>
-    </div>
-    <div class="topics">
-        <a class="topics2" href="#">All Natural</a>
-        <a class="topics2" href="#">Health & Wellness</a>
-        <a class="topics2" href="#">Performance & Recovery</a>
-        <a class="topics2" href="#">Protein Products</a>
-        <a class="topics2" href="#">Feature Collection</a>
-        <a class="topics2" href="#">Weight Gainers</a>
-        <a class="topics2" href="#">Ultimate Gear</a>
-        <a class="topics2" href="#">Weight Loss & Energy</a>
-    </div>
-</header>
- <!-- --------------------------main-------------------------------------- -->
-<main>
-<div class="produkte">
-    <h2>Products</h2>
-</div>
-    
-<div class="vor">
-    <div class="filter">
-        <i class="fa-solid fa-sliders">Filter</i>
-    </div>
-    
-    <div class="filterrechts">
-        <i class="fa-solid fa-border-all"></i>
-        <i class="fa-regular fa-square"></i>
-    </div>
-</div>
-</main>
- <!-- --------------------------footer-------------------------------------- -->
+    <header>
 
-<footer></footer>
+        <div class="headerschwarz">
+
+            <div class="oberschrift">
+                <i class="fa-solid fa-bars media-none"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div class="oberschrift">
+                <div class="ueberschrift">Ultimate<br>Nutrition</div>
+            </div>
+
+            <div class="oberschrift">
+                <i class="fa-solid fa-user"></i>
+                <i class="fa-regular fa-bag-shopping"></i>
+            </div>
+
+        </div>
+        <nav class="desktop-nav">
+            <a href="#" class="active">Shop All</a>
+            <a href="#">Shop</a>
+            <a href="#">Goals</a>
+            <a href="#">Videos</a>
+            <a href="#">Blog</a>
+            <a href="#">About</a>
+        </nav>
+
+        <div class="bildcontainer">
+            <img class="bild" src="images/header-image.png">
+            <h1 class="ueber2">Get Fit, Get<br>Ultimate</h1>
+            <a class="imagebutton">Show all products</a>
+        </div>
+        <div class="topics">
+            <a class="topics2" href="#">All Natural</a>
+            <a class="topics2" href="#">Health & Wellness</a>
+            <a class="topics2" href="#">Performance & Recovery</a>
+            <a class="topics2" href="#">Protein Products</a>
+            <a class="topics2" href="#">Feature Collection</a>
+            <a class="topics2" href="#">Weight Gainers</a>
+            <a class="topics2" href="#">Ultimate Gear</a>
+            <a class="topics2" href="#">Weight Loss & Energy</a>
+        </div>
+    </header>
+    <!-- --------------------------main-------------------------------------- -->
+    <main>
+        <div class="produkte">
+            <h2>Products</h2>
+        </div>
+
+        <div class="vor">
+            <!-- <div class="filter"> -->
+            <i class="left fa-solid fa-sliders"></i>
+            <div class="left">Filter</div>
+            <!-- </div> -->
+
+            <!-- <div class="filterrechts"> -->
+            <i class="right fa-solid fa-border-all"></i>
+            <i class="right fa-regular fa-square"></i>
+            <!-- </div> -->
+        </div>
+        <div class="subcontainer">
+            <div class="sub">
+                <img class="subpic" src="images/sup1.jpg" alt="sup1">
+                <p class="subtext">supplement</p>
+                <p class="subtext">10$</p>
+            </div>
+            <div class="sub">
+                <img class="subpic" src="images/sup2.jpg" alt="sup2">
+                <p class="subtext">supplement</p>
+                <p class="subtext">10$</p>
+            </div>
+            <div class="sub">
+                <img class="subpic" src="images/sup3.jpg" alt="sup3">
+                <p class="subtext">supplement</p>
+                <p class="subtext">10$</p>
+            </div>
+            <div class="sub">
+                <img class="subpic" src="images/sup4.jpg" alt="sup4">
+                <p class="subtext">supplement</p>
+                <p class="subtext">10$</p>
+            </div>
+            <div class="sub">
+                <img class="subpic" src="images/sup5.jpg" alt="sup5">
+                <p class="subtext">supplement</p>
+                <p class="subtext">10$</p>
+            </div>
+            <div class="sub">
+                <img class="subpic" src="images/sup6.jpg" alt="sup6">
+                <p class="subtext">supplement</p>
+                <p class="subtext">10$</p>
+            </div>
+            <div class="sub">
+                <img class="subpic" src="images/sup7.jpg" alt="sup7">
+                <p class="subtext">supplement</p>
+                <p class="subtext">10$</p>
+            </div>
+        </div>
+    </main>
+    <!-- --------------------------footer-------------------------------------- -->
+
+    <footer>
+        <div class="box">
+            <h2 class="news">Subscribe to our Newsletter</h2>
+            <p class="under">Promotions, new Products amd sales. Directly to our inbox</p>
+
+            <div class="form">
+                <input type="email" name="email" id="email" placeholder="your email">
+                <button class="but">Subscribe</button>
+            </div>
+        </div>
+        <section class="service-logos">
+            <div>
+                <div>
+                    <i class="fa-regular fa-truck"></i>
+                    <p>Free USA SHIPPING $99+</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-box"></i>
+                    <p>EASY RETURNS</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <i class="fa-regular fa-comment-dots"></i>
+                    <p>24/7 CUSTOMER SUPPORT</p>
+                </div>
+                <div>
+                    <i class="fa-regular fa-gift"></i>
+                    <p>TRY OUR SAMPLES</p>
+                </div>
+            </div>
+        </section>
+        <section class="unten">
+            <div class="about">
+                <h3 class="aun">About Ultimate Nutrition</h3>
+                <p class="context">Our team of expert scientists, formulators, and flavor chemists come together to
+                    develop advanced and effective formulas to help increase muscle, stimulate weight loss, improve
+                    health and wellness, and boost performance.
+                </p>
+            </div>
+            <div class="pc">
+                <h3>Product Collections></h3>
+                <ul class="list">
+                    <li>All Natural</li>
+                    <li>Health & Wellness</li>
+                    <li>Performance & Recovery</li>
+                    <li>Protein Product</li>
+                    <li>Ultimate Gear</li>
+                    <li>Weight Gainers</li>
+                    <li>Weight loss & Energy</li> 
+                </ul>
+            </div>
+            <section class="footer-social-media">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-github"></i>
+                <i class="fab fa-youtube"></i>
+            </section>
+            
+            <div class="ql">
+                <h3>quick links</h3>
+                <ul class="serv">
+                    <li>Search</li>
+                    <li>Terms of Service</li>
+                    <li>Refund policy</li>
+                </ul>
+            </div>
+
+            <div class="new">
+                <h3>Newsletter</h3>
+                <div class="form">
+                    <input type="email" name="email" id="email" placeholder="your email">
+                    <button class="but">Subscribe</button>
+                </div>
+            </div>
+        </section>
+        <section class="credit-cards bg-black color-white">
+            <i class="fa-brands fa-cc-amazon-pay"></i>
+            <i class="fa-brands fa-cc-amex"></i>
+            <i class="fa-brands fa-cc-diners-club"></i<i class="fa-solid fa-chevron-down"></i>>
+            <i class="fa-brands fa-cc-discover"></i>
+            <i class="fa-brands fa-cc-jcb"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-cc-paypal"></i>
+            <i class="fa-brands fa-vimeo"></i>
+            <i class="fa-brands fa-cc-visa"></i>
+        </section>
+        <section class="footer-policy bg-black color-white">
+            <a href="#">Search</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Refund policy</a>
+        </section>
+        <section class="bg-black">
+            <a class="language-btn">English<i class="fa-solid fa-chevron-down"></i></a>
+        </section>
+        <h6 class="bg-black color-white copyright"><i class="fa-regular fa-copyright"></i> 2024 Ultimate Nutrition</h6>
+    </footer>
 
 </body>
+
 </html>
