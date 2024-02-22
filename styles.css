@@ -152,7 +152,7 @@ body {
     padding: 5px;
 }
 .xmark {
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -166,7 +166,8 @@ body {
     left: -20%;
     transition: 2s;
     width: 20%;
-    padding-top: 20px;
+    padding-top: 30vh;
+    top: 0;
 }
 .fa-xmark {
     align-self: flex-end;
@@ -220,15 +221,16 @@ body {
 }
 .ueber2{
     text-align: center;
-    color: beige;
-    font-size: 4rem;
+    color: white;
+    font-size: 3rem;
     
 }
 .imagebutton{
     color: aqua;
     font-size: 2rem;
-    border: 2px solid blue;
+    padding: 10px;
     background: blue;
+    border-radius: 10px;
 }
 .topics {
     margin-top: 20px;
@@ -251,6 +253,9 @@ body {
     height: 5%;
 }
 /* ------------------------------------------------main----------------------------------------- */
+main {
+    padding-bottom: 60px;
+}
 .produkte{
     margin: 15px;
     display: flex;
@@ -310,6 +315,8 @@ body {
     width: vw;
     height: 300px;justify-content: center;
     align-items: center;
+    background: rgb(23,120,221);
+    background: linear-gradient(147deg, rgba(23,120,221,1) 22%, rgba(2,0,36,1) 89%);
 }
 .form {
     margin: 10px;
@@ -385,6 +392,38 @@ section.service-logos > div > div > p {
 }
 
 .headerschwarz {}
+.about {
+    padding-top: 20px;
+}
+.pc {
+    padding-top: 50px;
+}
+.footer-social-media {
+    padding-top: 50px;
+}
+.ql, .new, .credit-cards, .footer-policy {
+    padding-top: 50px;
+}
+input[type="email"] {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+input[type="email"]::placeholder {
+    font-family: sans-serif;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.but {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-family: sans-serif;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 /* ------------------------------------------------docs----------------------------------------- */
 
 /* 
@@ -446,6 +485,7 @@ flex-docs
         width: 100%;
         transition: 0s;
         padding-top: 0;
+        top: auto;
     }
     .active {
         border-bottom: 2px solid white;
