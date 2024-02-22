@@ -60,6 +60,9 @@ body {
  .wrapper, .advertising-english-btn {
     display: none;
  }
+ .wrapper a i {
+    color: white;
+ }
 .discount-container {
     display: flex;
     flex-direction: column;
@@ -78,19 +81,32 @@ body {
 @keyframes discount-ani {
     0% {
         opacity: 1;
+        scale: 1 1;
     }
-    25% {
+    20% {
         opacity: 1;
+        scale: 1 1;
     }
-    75% {
+    40% {
         opacity: 0;
+        scale: 1 0.1;
+    }
+    60% {
+        opacity: 0;
+        scale: 1 0.1;
+    }
+    80% {
+        opacity: 0;
+        scale: 1 0.1;
     }
     100% {
         opacity: 0;
+        scale: 1 0.1;
     }
 }
 
 .discount2 {
+    position: absolute;
     opacity: 0;
     animation-name: discount2-ani;
     animation-duration: 10s; 
@@ -100,15 +116,27 @@ body {
 @keyframes discount2-ani {
     0% {
         opacity: 0;
+        scale: 1 0.1;
     }
-    25% {
+    20% {
         opacity: 0;
+        scale: 1 0.1;
     }
-    75% {
+    40% {
+        opacity: 0;
+        scale: 1 0.1;
+    }
+    60% {
         opacity: 1;
+        scale: 1 1;
+    }
+    80% {
+        opacity: 1;
+        scale: 1 1;
     }
     100% {
-        opacity: 1;
+        opacity: 0;
+        scale: 1 0.1;
     }
 }
 
@@ -146,6 +174,7 @@ body {
 .xmark > * {
     text-decoration: none;
     padding: 10px;
+    color: white;
 }
 @media screen and (max-width:767px)  {
     .hamburger-nav:hover .xmark {
