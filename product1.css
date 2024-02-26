@@ -139,57 +139,81 @@ body {
     height: 5%;
 }
 /* ------------------------------------------------main----------------------------------------- */
-.produkte{
+/* .produkte{
     margin: 15px;
     display: flex;
     font-size: 1rem;
     text-transform: uppercase;
     justify-content: center;
     color: purple
-}
-.filter{
+} */
+/* .filter{
     
 }
 .filterrechts{
-/* justify-self: end; */
-}
-.vor > * {
-    /* display: flex; */
+/* justify-self: end; 
+} */
+/* .vor > * {
+    /* display: flex; 
     display: inline;
     margin: 5px;
     font-size: 1.5rem;
-}
-.right {
+} */
+/* .right {
     float: right;
 }
 .left {
     float: left;
-}
+} */
 .sub {
     width: 1000px;
     height: 600px;
     display: flex;
     flex-direction: row;
-    justify-self: left;
-    align-items: flex-start;
+    justify-content: center;
     border-radius: 1px; 
     background: white;
     padding: 10px;
     margin: 5px;
 }
-.produkte {
+ .product1 {
+    display: contents;
+    left: 20px;
+    transform: translate(10%,10%);
+    position: absolute;
+    width: max-content;
+}
+
+.card1 {
+    border: 1px solid black;
+    width: max-content;
+    text-align: center;
+    display: inline-block;
+    margin: 0 500px;
+}
+
+.card1 img{
+    width: 300px;
+    padding: 5px;
+} 
+.subtext {
+    font-size: 2rem;
+    text-align: center;
+}
+
+ .produkte1 {
     margin-top: 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 .subpic {
-    width: 300px;
+    width: 500px;
     height: 600px;
     object-fit: cover;
-    /* border-radius: 10px;
-    border: 2px solid darkgray; */
-}
+    border-radius: 10px;
+    border: 2px solid darkgray; 
+} 
 
 
 .waren{
