@@ -6,62 +6,18 @@
 body {
     display: flex;
     flex-direction: column;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
     font-family: "Anta", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
-/* ------------------------------------------------header----------------------------------------- */
-/* .discount-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: rgb(45, 23, 141);
-    color: white;
-    padding: 5px;
-}
-.discount1{
-    /* position: absolute; */
-    /* animation-name: discount-ani;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-      
-    animation-direction: alternate;
-}
-@keyframes discount-ani {
-    0%, 100%  {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-}
-.discount2{
-    opacity: 0;
-    animation-name: discount2-ani;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-delay: 5s;
-}
-@keyframes discount2-ani {
-    0%, 100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
- } */ 
+
  .advertising {
      background: rgb(45, 23, 141);
      color: white;
  }
  .wrapper, .advertising-english-btn {
     display: none;
- }
- .wrapper a i {
-    color: white;
  }
 .discount-container {
     display: flex;
@@ -74,39 +30,26 @@ body {
 
 .discount1 {
     animation-name: discount-ani;
-    animation-duration: 10s; /* Adjusted duration for a smoother transition */
+    animation-duration: 10s; 
     animation-iteration-count: infinite;
 }
 
 @keyframes discount-ani {
     0% {
         opacity: 1;
-        scale: 1 1;
     }
-    20% {
+    25% {
         opacity: 1;
-        scale: 1 1;
     }
-    40% {
+    75% {
         opacity: 0;
-        scale: 1 0.1;
-    }
-    60% {
-        opacity: 0;
-        scale: 1 0.1;
-    }
-    80% {
-        opacity: 0;
-        scale: 1 0.1;
     }
     100% {
         opacity: 0;
-        scale: 1 0.1;
     }
 }
 
 .discount2 {
-    position: absolute;
     opacity: 0;
     animation-name: discount2-ani;
     animation-duration: 10s; 
@@ -116,71 +59,15 @@ body {
 @keyframes discount2-ani {
     0% {
         opacity: 0;
-        scale: 1 0.1;
     }
-    20% {
+    25% {
         opacity: 0;
-        scale: 1 0.1;
     }
-    40% {
-        opacity: 0;
-        scale: 1 0.1;
-    }
-    60% {
+    75% {
         opacity: 1;
-        scale: 1 1;
-    }
-    80% {
-        opacity: 1;
-        scale: 1 1;
     }
     100% {
-        opacity: 0;
-        scale: 1 0.1;
-    }
-}
-
-.fullnav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 10vh;
-    background: black;
-    color: white;
-}
-.fullnav > * > * {
-    padding: 5px;
-}
-.xmark {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    font-family: sans-serif;
-    font-family: "Anta", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    background: black;
-    color: white;
-    height: 100vh;
-    left: -20%;
-    transition: 2s;
-    width: 20%;
-    padding-top: 30vh;
-    top: 0;
-}
-.fa-xmark {
-    align-self: flex-end;
-}
-.xmark > * {
-    text-decoration: none;
-    padding: 10px;
-    color: white;
-}
-@media screen and (max-width:767px)  {
-    .hamburger-nav:hover .xmark {
-        display: flex;
-        left: 0;
+        opacity: 1;
     }
 }
 
@@ -200,7 +87,7 @@ body {
 .oberschrift > * {
     margin: 10px;
 }
-.desktop-nav {
+/*.desktop-nav {
     display: none;
 }
 .bildcontainer {
@@ -210,28 +97,27 @@ body {
     width: 100%;
     height: 320px;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
 }
-.bild{
+.bild{ 
     width: 100%;
     height: 100%;
     position: absolute;
     z-index: -1;
     object-fit: cover;
 }
-.ueber2{
+ .ueber2{
     text-align: center;
-    color: white;
-    font-size: 3rem;
+    color: beige;
+    font-size: 4rem;
     
 }
 .imagebutton{
     color: aqua;
     font-size: 2rem;
-    padding: 10px;
+    border: 2px solid blue;
     background: blue;
-    border-radius: 10px;
-}
+} 
 .topics {
     margin-top: 20px;
     font-size: 1.2rem;
@@ -253,9 +139,6 @@ body {
     height: 5%;
 }
 /* ------------------------------------------------main----------------------------------------- */
-main {
-    padding-bottom: 60px;
-}
 .produkte{
     margin: 15px;
     display: flex;
@@ -283,29 +166,37 @@ main {
     float: left;
 }
 .sub {
-    width: 200px;
-    height: 300px;
+    width: 1000px;
+    height: 600px;
     display: flex;
-    flex-direction: column;
-    align-self: center;
-    align-items: center;
-    border-radius: 10px;
-    background: silver;
-    padding: 15px;
+    flex-direction: row;
+    justify-self: left;
+    align-items: flex-start;
+    border-radius: 1px; 
+    background: white;
+    padding: 10px;
     margin: 5px;
 }
-.subcontainer {
-    margin-top: 80px;
+.produkte {
+    margin-top: 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 .subpic {
-    width: 80%;
-    height: 300px;
+    width: 300px;
+    height: 600px;
     object-fit: cover;
-    border-radius: 10px;
+    /* border-radius: 10px;
+    border: 2px solid darkgray; */
+}
+
+
+.waren{
+    font-size: 2rem;
+    font-weight: 900;
     border: 2px solid darkgray;
+    border-radius: 10px;
 }
 /* ------------------------------------------------footer----------------------------------------- */
 .box {
@@ -313,16 +204,16 @@ main {
     flex-direction: column;
     background: blue;
     width: vw;
-    height: 300px;justify-content: center;
+    height: 300px;
+    justify-content: center;
     align-items: center;
-    background: rgb(23,120,221);
-    background: linear-gradient(147deg, rgba(23,120,221,1) 22%, rgba(2,0,36,1) 89%);
+    margin-top: 10%;
 }
 .form {
     margin: 10px;
 }
 .news {
-        color: yellow;
+    color: yellow;
 }
 .but {
     background: yellow;
@@ -339,7 +230,7 @@ section.service-logos > div {
 }
 section.service-logos > div > div {
     width: 50%;
-    height: 100px;
+    height:100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -392,38 +283,6 @@ section.service-logos > div > div > p {
 }
 
 .headerschwarz {}
-.about {
-    padding-top: 20px;
-}
-.pc {
-    padding-top: 50px;
-}
-.footer-social-media {
-    padding-top: 50px;
-}
-.ql, .new, .credit-cards, .footer-policy {
-    padding-top: 50px;
-}
-input[type="email"] {
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-}
-input[type="email"]::placeholder {
-    font-family: sans-serif;
-    font-family: "Anta", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-.but {
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-    font-family: sans-serif;
-    font-family: "Anta", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
 /* ------------------------------------------------docs----------------------------------------- */
 
 /* 
@@ -459,36 +318,26 @@ flex-docs
     .advertising-english-btn {
         margin-right: 3%;
     }
-    .hamburger-nav {
-        color: black;
-    }
-    .fullnav {
+    .desktop-nav {
+        display: block;
+        background: black;
+        color: white;
+        height: 5vh;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .xmark {
-        position: absolute;
-        display: flex;
-        flex-direction: row;
         justify-content: center;
         align-items: center;
-        font-family: sans-serif;
-        font-family: "Anta", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        width: 100%;
-        margin-top: 3vh;
-        background: black;
-        left: 0;
-        height: 10vh;
-        width: 100%;
-        transition: 0s;
-        padding-top: 0;
-        top: auto;
+    }
+    .desktop-nav > * {
+        height: 100%;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration-line: none;
+        color: white;
     }
     .active {
-        border-bottom: 2px solid white;
+        border-bottom: 1px solid white;
     }
     .media-none {
         display: none;
