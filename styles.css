@@ -492,12 +492,12 @@ flex-docs
 
 /* --------------------------site differents -------------------------------------*/
 .aboutusueberschrift{
-    color:purple
+    color:purple;
 }
 .aboutbox{
     padding-top: 25px;
     text-align: center;
-    color: white
+    color: white;
     width: vw;
     background: linear-gradient(to right, #080808, #6e0d97);
 }
@@ -545,3 +545,24 @@ flex-docs
     text-align: center;
     font-size: 1.5rem;
 }
+
+/* --------------------blog------------------------------ */
+
+.blog{
+    text-align: center;
+    color: rgb(59, 15, 59);
+    font-size: 2rem;
+}
+
+.blognews{
+    display: flex;
+    padding: 10px;
+    border: 2px solid ;
+}
+
+.blog1{
+    border: 2px solid rgb(46, 6, 46);
+    padding: 5px;
+}
+
+
