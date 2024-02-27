@@ -143,6 +143,7 @@ body {
     text-decoration: none;
     padding: 10px;
     color: white;
+    z-index: 300;
 }
 
 @media screen and (max-width:767px)  {
