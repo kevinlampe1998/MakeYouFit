@@ -489,4 +489,59 @@ flex-docs
 }
 
 
+
 /* --------------------------site differents -------------------------------------*/
+.aboutusueberschrift{
+    color:purple
+}
+.aboutbox{
+    padding-top: 25px;
+    text-align: center;
+    color: white
+    width: vw;
+    background: linear-gradient(to right, #080808, #6e0d97);
+}
+
+.aboutueberschrift{
+    padding-bottom: 10px;
+    text-align: center;
+    color: rgb(88, 8, 88);
+    font-size: 2rem;
+
+}
+.aboutfounder{
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: .75rem;
+}
+.aboutsince{
+       color: white;
+}
+
+.aboutstart{
+    padding-top: 15px;
+    font-size: 1rem;
+}
+
+.aboutmiddle{
+    font-size: 1rem;
+    padding-bottom: 15px;
+}
+.aboutlogos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutbox2{
+    justify-content: center;
+    color: white;
+    background: linear-gradient(to right, #080808, #6e0d97);
+}
+.aboutima {
+    position: relative;
+    left: 200px;
+}
+.aboutviolet{
+    text-align: center;
+    font-size: 1.5rem;
+}
