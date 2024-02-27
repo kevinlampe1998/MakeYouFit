@@ -311,7 +311,7 @@ main {
     background: linear-gradient(147deg, rgba(23,120,221,1) 22%, rgba(2,0,36,1) 89%);
 }
 .form {
-    margin: 10px;
+    margin-top: 10px;
 }
 .news {
         color: yellow;
@@ -345,9 +345,15 @@ section.service-logos > div > div > p {
 }
 
 .unten {
-   padding: 10px;
+    padding: 10px;
     background: black;
     color: white;
+}
+.unten, pc, footer-social-media, ql, new, .credit-cards, .footer-policy {
+    padding-left: 60px;
+}
+.unten li {
+    list-style: none;
 }
 .footer-social-media {
     display: flex;
@@ -357,7 +363,7 @@ section.service-logos > div > div > p {
 }
 .credit-cards > * {
     font-size: 2rem;
-    margin: 5px;
+    margin-right: 10px;
 }
 .bg-black {
     background: black;
@@ -367,23 +373,23 @@ section.service-logos > div > div > p {
 }
 .footer-policy {
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
 }
 .footer-policy a {
     text-decoration-line: none;
     color: white;
-    margin: 15px;
+    margin-right: 30px;
 }
 .language-btn {
     background: lightgray;
     width: 30px;
     padding: 10px;
+    margin-left: 60px;
 }
 .copyright {
-    padding: 40px 0 20px 10px;
+    padding: 40px 0 200px 50px;
 }
 
-.headerschwarz {}
 .about {
     padding-top: 20px;
 }
@@ -414,7 +420,8 @@ input[type="email"]::placeholder {
     font-family: sans-serif;
     font-family: "Anta", sans-serif;
     font-weight: 400;
-    font-style: normal;
+    font-style: 
+    normal;
 }
 /* ------------------------------------------------docs----------------------------------------- */
 
