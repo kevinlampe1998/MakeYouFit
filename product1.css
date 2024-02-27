@@ -6,12 +6,11 @@
 body {
     display: flex;
     flex-direction: column;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
     font-family: "Anta", sans-serif;
-    font-weight: 900;
+    font-weight: 400;
     font-style: normal;
 }
-/* ------------------------------------------------header----------------------------------------- */
 
  .advertising {
      background: rgb(45, 23, 141);
@@ -19,9 +18,6 @@ body {
  }
  .wrapper, .advertising-english-btn {
     display: none;
- }
- .wrapper a i {
-    color: white;
  }
 .discount-container {
     display: flex;
@@ -34,39 +30,26 @@ body {
 
 .discount1 {
     animation-name: discount-ani;
-    animation-duration: 10s; /* Adjusted duration for a smoother transition */
+    animation-duration: 10s; 
     animation-iteration-count: infinite;
 }
-/* 500px */
+
 @keyframes discount-ani {
     0% {
         opacity: 1;
-        scale: 1 1;
     }
-    20% {
+    25% {
         opacity: 1;
-        scale: 1 1;
     }
-    40% {
+    75% {
         opacity: 0;
-        scale: 1 0.1;
-    }
-    60% {
-        opacity: 0;
-        scale: 1 0.1;
-    }
-    80% {
-        opacity: 0;
-        scale: 1 0.1;
     }
     100% {
         opacity: 0;
-        scale: 1 0.1;
     }
 }
 
 .discount2 {
-    position: absolute;
     opacity: 0;
     animation-name: discount2-ani;
     animation-duration: 10s; 
@@ -76,27 +59,15 @@ body {
 @keyframes discount2-ani {
     0% {
         opacity: 0;
-        scale: 1 0.1;
     }
-    20% {
+    25% {
         opacity: 0;
-        scale: 1 0.1;
     }
-    40% {
-        opacity: 0;
-        scale: 1 0.1;
-    }
-    60% {
+    75% {
         opacity: 1;
-        scale: 1 1;
-    }
-    80% {
-        opacity: 1;
-        scale: 1 1;
     }
     100% {
-        opacity: 0;
-        scale: 1 0.1;
+        opacity: 1;
     }
 }
 
@@ -160,7 +131,7 @@ body {
 .oberschrift > * {
     margin: 10px;
 }
-.desktop-nav {
+/*.desktop-nav {
     display: none;
 }
 .bildcontainer {
@@ -168,30 +139,29 @@ body {
     display: flex;
     flex-direction: column; 
     width: 100%;
-    height: 500px;
+    height: 320px;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
 }
-.bild{
+.bild{ 
     width: 100%;
     height: 100%;
     position: absolute;
     z-index: -1;
     object-fit: cover;
 }
-.ueber2{
+ .ueber2{
     text-align: center;
-    color: white;
-    font-size: 3rem;
+    color: beige;
+    font-size: 4rem;
     
 }
 .imagebutton{
     color: aqua;
     font-size: 2rem;
-    padding: 10px;
+    border: 2px solid blue;
     background: blue;
-    border-radius: 10px;
-}
+} 
 .topics {
     margin-top: 20px;
     font-size: 1.2rem;
@@ -213,59 +183,91 @@ body {
     height: 5%;
 }
 /* ------------------------------------------------main----------------------------------------- */
-main {
-    padding-bottom: 60px;
-}
-.produkte{
+/* .produkte{
     margin: 15px;
     display: flex;
     font-size: 1rem;
     text-transform: uppercase;
     justify-content: center;
     color: purple
-}
-.filter{
+} */
+/* .filter{
     
 }
 .filterrechts{
-/* justify-self: end; */
-}
-.vor > * {
-    /* display: flex; */
+/* justify-self: end; 
+} */
+/* .vor > * {
+    /* display: flex; 
     display: inline;
     margin: 5px;
     font-size: 1.5rem;
-}
-.right {
+} */
+/* .right {
     float: right;
 }
 .left {
     float: left;
+} */
+main {
+    margin-top: 200px;
 }
 .sub {
-    width: 200px;
-    height: 300px;
+    width: 1000px;
+    height: 600px;
     display: flex;
-    flex-direction: column;
-    align-self: center;
-    align-items: center;
-    border-radius: 10px;
-    background: silver;
-    padding: 15px;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 1px; 
+    background: white;
+    padding: 10px;
     margin: 5px;
 }
-.subcontainer {
-    margin-top: 80px;
+ .product1 {
+    display: contents;
+    left: 20px;
+    transform: translate(10%,10%);
+    position: absolute;
+    width: max-content;
+}
+
+.card1 {
+    border: 1px solid black;
+    width: max-content;
+    text-align: center;
+    display: inline-block;
+    margin: 0 500px;
+}
+
+.card1 img{
+    width: 300px;
+    padding: 5px;
+} 
+.subtext {
+    font-size: 2rem;
+    text-align: center;
+}
+
+ .produkte1 {
+    margin-top: 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 .subpic {
-    width: 80%;
-    height: 300px;
+    width: 500px;
+    height: 600px;
     object-fit: cover;
     border-radius: 10px;
+    border: 2px solid darkgray; 
+} 
+
+
+.waren{
+    font-size: 2rem;
+    font-weight: 900;
     border: 2px solid darkgray;
+    border-radius: 10px;
 }
 /* ------------------------------------------------footer----------------------------------------- */
 .box {
@@ -273,16 +275,16 @@ main {
     flex-direction: column;
     background: blue;
     width: vw;
-    height: 300px;justify-content: center;
+    height: 300px;
+    justify-content: center;
     align-items: center;
-    background: rgb(23,120,221);
-    background: linear-gradient(147deg, rgba(23,120,221,1) 22%, rgba(2,0,36,1) 89%);
+    margin-top: 10%;
 }
 .form {
     margin: 10px;
 }
 .news {
-        color: yellow;
+    color: yellow;
 }
 .but {
     background: yellow;
@@ -299,7 +301,7 @@ section.service-logos > div {
 }
 section.service-logos > div > div {
     width: 50%;
-    height: 100px;
+    height:100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -352,38 +354,6 @@ section.service-logos > div > div > p {
 }
 
 .headerschwarz {}
-.about {
-    padding-top: 20px;
-}
-.pc {
-    padding-top: 50px;
-}
-.footer-social-media {
-    padding-top: 50px;
-}
-.ql, .new, .credit-cards, .footer-policy {
-    padding-top: 50px;
-}
-input[type="email"] {
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-}
-input[type="email"]::placeholder {
-    font-family: sans-serif;
-    font-family: "Anta", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-.but {
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-    font-family: sans-serif;
-    font-family: "Anta", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
 /* ------------------------------------------------docs----------------------------------------- */
 
 /* 
@@ -455,5 +425,18 @@ flex-docs
     }
 }
 
+.warenkorb {
+    background-image: url("images/shopping-cart-304843_640.webp");
+    width: 100%; height: 700px;
+    background-repeat: no-repeat;
+    object-fit: fit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-/* --------------------------site differents -------------------------------------*/
+.addbtn {
+    color: blue;
+    font-size: 2rem;
+    background: yellow;
+}
