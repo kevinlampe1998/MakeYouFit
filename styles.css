@@ -557,12 +557,15 @@ flex-docs
 .blognews{
     display: flex;
     padding: 10px;
-    border: 2px solid ;
+    
 }
 
 .blog1{
-    border: 2px solid rgb(46, 6, 46);
+    border: 2px solid purple;
     padding: 5px;
 }
 
-
+.blognews2{
+    display: flex;
+    padding: 10px;
+}
