@@ -188,6 +188,18 @@ body {
     z-index: -1;
     object-fit: cover;
 }
+.video-content {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+video {
+    height: 200px;
+    width: 300px;
+}
+
 .ueber2{
     text-align: center;
     color: white;
@@ -198,7 +210,7 @@ body {
     color: aqua;
     font-size: 2rem;
     padding: 10px;
-    background: blue;
+    background: rgba(0, 0, 255, 0.7);
     border-radius: 10px;
 }
 .topics {
@@ -242,7 +254,6 @@ main {
 .vor > * {
     /* display: flex; */
     display: inline;
-    margin: 5px;
     font-size: 1.5rem;
 }
 .right {
@@ -265,12 +276,21 @@ main {
     background: silver;
     padding: 15px;
     margin: 5px;
+    margin-bottom: 40px;
+    text-decoration-line: none;
 }
 .subcontainer {
     margin-top: 80px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+.subcontainer > div > a > p {
+    color: darkblue;
+    padding-top: 5px;
+}
+.subcontainer > div > a > p:hover {
+    color: purple;
 }
 .subpic {
     width: 80%;
@@ -394,7 +414,8 @@ input[type="email"]::placeholder {
     font-family: sans-serif;
     font-family: "Anta", sans-serif;
     font-weight: 400;
-    font-style: normal;
+    font-style: 
+    normal;
 }
 /* ------------------------------------------------docs----------------------------------------- */
 
