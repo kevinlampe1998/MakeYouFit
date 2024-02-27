@@ -12,7 +12,12 @@ body {
     font-style: normal;
 }
 /* ------------------------------------------------header----------------------------------------- */
-
+.leftnavbtns {
+    padding-left: 10px;
+}
+.rightnavbtns {
+    padding-right: 10px;
+}
  .advertising {
      background: rgb(45, 23, 141);
      color: white;
@@ -22,6 +27,7 @@ body {
  }
  .wrapper a i {
     color: white;
+    padding-right: 10px;
  }
 .discount-container {
     display: flex;
@@ -107,6 +113,7 @@ body {
     height: 10vh;
     background: black;
     color: white;
+    z-index: 10;
 }
 .fullnav > * > * {
     padding: 5px;
@@ -137,6 +144,7 @@ body {
     padding: 10px;
     color: white;
 }
+
 @media screen and (max-width:767px)  {
     .hamburger-nav:hover .xmark {
         display: flex;
@@ -238,9 +246,12 @@ main {
 }
 .right {
     float: right;
+    padding-right: 20px;
 }
 .left {
     float: left;
+    padding-left: 20px;
+
 }
 .sub {
     width: 200px;
